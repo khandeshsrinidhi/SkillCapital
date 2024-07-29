@@ -26,6 +26,13 @@ public class UserController {
 	@Autowired
 	private UserService service;
 	
+	
+	@GetMapping("/hello")
+	public String hello()
+	{
+		return "Hie";
+	}
+	
 	@GetMapping("/loginPage")
 	public ResponseEntity<List<UserData>> getAllUsers(){
 		return new ResponseEntity<>(service.getAllUsers(),HttpStatus.OK);
