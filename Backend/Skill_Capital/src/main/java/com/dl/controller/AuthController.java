@@ -16,7 +16,7 @@ import com.dl.response.AuthenticationResponse;
 import com.dl.service.AuthService;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/api/v1/auth")
 @RequiredArgsConstructor
 public class AuthController {
     @Autowired
